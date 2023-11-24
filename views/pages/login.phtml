@@ -1,0 +1,30 @@
+<section>
+    <div class="row">
+        <div class="col-12">
+            <h1>Login</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-8">
+            <h3>Entre com seu usuário, email ou CPF</h3>
+            <form action="<?= $_refer("login"); ?>" method="post">
+                <label>Usuário</label><br>
+                
+<!--                <input type="radio" name="change" value="username" checked="true" onclick="javascript:changeInputUsername(this);"> Logar com username
+                <input type="radio" name="change" value="CPF" onclick="javascript:changeInputUsername(this);"> Logar com CPF
+                <input type="radio" name="change" value="email" onclick="javascript:changeInputUsername(this);"> Logar com Email<br>
+                id="changeUsername" -->
+                
+                <input class="form-control" type="text" name="username" required="true"/><br>
+                <label>Senha</label><br>
+                <input class="form-control" type="password" name="password" required="true"/><br>
+                <input class="btn btn-lg btn-success" type="submit" value="Entrar"/><br>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6 offset-3 mt-3">
+            <a class="btn-lg btn btn-warning text-white text-decoration-none" href="<?= $_refer("register"); ?>">Registre-se</a>
+        </div>
+    </div>
+</section>

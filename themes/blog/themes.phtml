@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="<?= $_lang; ?>">
+    <head>
+        <?php include $_element("head"); ?>
+       
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black" >
+        <?php include $_element("navegacao/navbar"); ?>
+       
+      </nav>
+        <?php include $_element("navegacao/navbar"); ?>
+        <?php include $this->viewPath; ?>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <footer class="text-center text-white fixed-bottom" style="background-color: #21081a;">
+                        <?php include $_element("footer"); ?>
+                        <?php include $_element("scripts"); ?>
+                    </footer>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
+
+
+
+
+

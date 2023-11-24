@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(238, 238, 247);
+}
+h1{
+    background-color: rgb(136, 88, 190);
+    margin: auto;
+    border: 1px solid gray;
+    border-radius: 30px;
+    padding: 10px;
+    box-shadow: 2px 2px grey;
+    text-align: center;
+    width: 300px;
+}
+main {
+    padding: 10px ;
+    height: 80vh;
+    
+    
+}
+form{
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    border: 1px solid gray;
+    border-radius: 30px;
+    padding: 10px;
+    box-shadow: 2px 2px grey;
+    text-align: center;
+    width: 600px;
+    height: 80hv;
+    
+}
+input{
+    margin-bottom: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    background-color: bisque;
+}
+input[type="text"]{
+    margin: 5px;
+    padding: 8px;
+    outline:none;
+    width:90% ;
+    font-size: 18px;
+    background-color: rgb(182, 181, 189);
+}
+input[type="submit"]{
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    background-color: rgb(136, 88, 190);
+    width: 20%;
+    border-radius: 30px;
+    cursor: pointer;
+    align-items: center;
+}
+.list{
+    padding: 30px;
+    margin-top: 10px;
+    height: 60%;
+    
+    
+   
+}
+ul{
+    list-style: none;
+    overflow: scroll;
+    height: 100%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+li{
+    border-bottom: 1px solid darkslateblue;
+    margin-top: 5px;
+}
+
+button {
+    display: inline-block;
+    padding: 3px 10px;
+    background-color: rgb(136, 88, 190); 
+    color: #000000; 
+    border: none;
+    border-radius: 5px; 
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+}
+#formulario{
+    display: flex;
+    justify-content: center;
+}

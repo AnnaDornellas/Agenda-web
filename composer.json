@@ -1,0 +1,26 @@
+{
+    "name": "tinymvc/tinymvc",
+    "type": "project",
+    "description": "Mini MVC para atender as necessidades da SUTIN",
+    "keywords": [
+        "framework"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": "^7.3|^8.0",
+        "tracy/tracy": "^2.8",
+        "vipsoft/unzip": "^1.3",
+        "voku/html-min": "^4.4",
+        "dompdf/dompdf": "^2.0",
+        "monolog/monolog": "^2.8",
+        "egulias/email-validator": "^3.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "System\\Classes\\": "classes",
+            "App\\Behavior\\": "behaviors",
+            "App\\Controller\\": "controllers",
+            "App\\Model\\": "models"
+        }
+    }
+}

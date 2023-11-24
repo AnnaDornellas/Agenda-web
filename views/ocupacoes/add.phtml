@@ -1,0 +1,12 @@
+<h1>Adicionar pessoa a uma ocupação</h1>
+<div>
+    <form action="<?= $_refer("ocupacoes/add"); ?>" method="post">
+        <label>Escreva seu nome</label><br>
+        <input type='text' name='name' required="true" placeholder="Escreva seu nome"><br>
+        <label>Escreva a sua ocupação</label><br>
+        <input type='text' name='occupation' required="true" placeholder="Escreva a sua ocupação"><br>
+        <label>Escreva o seu email</label><br>
+        <input type='text' name='email' required="true" placeholder="Escreva o seu email"><br>
+        <input type="submit" value="salvar">
+    </form>
+</div>

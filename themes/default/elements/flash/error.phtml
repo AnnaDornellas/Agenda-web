@@ -1,0 +1,6 @@
+<?php
+$_messageError = System\Classes\View::flashError();
+?>
+<?php if ($_messageError) : ?>
+    <div class="alert alert-danger"><?= $_messageError; ?></div>
+<?php endif; ?>

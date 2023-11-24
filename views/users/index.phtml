@@ -1,0 +1,45 @@
+<h1>Lista de Usuários</h1>
+<section id="main">
+    <div class="table-primary">
+        <div class="tab-pane container-fluid active px-0" id="pendentes">
+            <div class="table-responsive">
+                <table class="px-0 table table-light table-striped table-bordered table-hover">
+                    <thead class="text-center table-warning">
+                        <tr class="align-middle">
+                            <th class="fs-5 bg-acqua-primary text-white fw-normal force-inline" scope="col">#</th>
+                            <th class="fs-5 bg-acqua-primary text-white fw-normal force-inline" scope="col">Nome</th>
+                            <th class="fs-5 bg-acqua-primary text-white fw-normal force-inline" scope="col">Email</th>
+                            <th class="fs-5 bg-acqua-primary text-white fw-normal force-inline" scope="col">Matrícula</th>
+                            <th class="fs-5 bg-acqua-primary text-white fw-normal force-inline" scope="col">Órgão/Departamento</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php foreach ($users as $user) : ?>
+                            <tr>
+                                <td class="fs-5 text-center force-inline"><?= $user["id"]; ?></td>
+                                <td class="fs-5 text-center force-inline">
+                                    <?= $user["name"]; ?><br>
+                                    <a href="<?= $_refer("users/edit/" . $user["id"]) ?>" class="badge bg-secondary text-white fw-normal text-center fs-5 m-1"><i class="bi fs-5 bi-pencil-square" style="margin-right: 0 !important"></i>
+                                    </a>
+                                    <a href="<?= $_refer("users/delete/" . $user["id"]) ?>" class="badge bg-secondary text-white fw-normal text-center fs-5 m-1">
+                                        <i class="bi fs-5 bi-trash-fill" style="margin-right: 0 !important"></i>
+                                    </a>
+                                    <?php ($user["status"]) ? $stt = "Ativo" : $stt = "Inativo"; ?>
+                                    <?php ($stt == "Ativo") ? $pmy = "bg-secondary" : $pmy = "bg-secondary"; ?>
+                                    <a href="<?= $_refer("users/status/" . $user["id"]) ?>" class="badge <?= $pmy; ?> text-white fw-normal text-center">
+                                        <?= $stt; ?> <i class="bi fs-5 bi-activity" style="margin-right: 0 !important"></i>
+                                    </a>
+                                    <a href="<?= $_refer("users/allows/" . $user["id"]) ?>" class="badge bg-secondary text-white fw-normal text-center fs-5 m-1"><i class="bi fs-5 bi-key" style="margin-right: 0 !important"></i>
+                                    </a>
+                                </td>
+                                <td class="fs-5 text-center force-inline"><?= $user["email"]; ?></td>
+                                <td class="fs-5 text-center force-inline"><?= $user["registration"]; ?></td>
+                                <td class="fs-5 text-center force-inline"><?= $user["department"]; ?></td>
+                            </tr>
+                        <?php endforeach; ?>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,6 @@
+<?php
+$_messageSuccess = System\Classes\View::flashSuccess();
+?>
+<?php if ($_messageSuccess != "") : ?>
+    <div class="alert alert-success"><?= $_messageSuccess; ?></div>
+<?php endif; ?>

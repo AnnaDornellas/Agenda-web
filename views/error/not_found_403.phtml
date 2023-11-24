@@ -1,0 +1,25 @@
+<div class="container error-page d-flex flex-wrap m-auto">
+    <div class="row">
+        <div class="col pt-5 m-auto">
+            <div class="col">
+                <h1>Ei, Acesso Negado!</h1>
+            </div>
+            <div class="col text-center">
+                <h4>Você não tem permissão para acessar essa página.</h4>
+            </div>
+            <div class="col text-center">
+                <br>
+                <h4>Retorne ao acesso devido:</h4>
+                <a class="nav-link fw-bold d-inline <?= $act_home; ?>" href="<?= $_refer(); ?>"> <i class="bi bi-house-fill"></i> Início </a>
+                <a class="nav-link fw-bold d-inline mx-3 <?= $act_menu; ?>" href="<?= $_refer("dashboard"); ?>"> <i class="bi bi-menu-button-wide-fill"></i> Menu </a>
+                <a class="nav-link fw-bold d-inline" href="javascript:history.back()">
+                    <i class="bi bi-arrow-left-circle-fill"></i> Voltar
+                </a>
+                </p>
+            </div>
+        </div>
+        <div class="col text-center">
+            <img src="<?= $_img("403.svg"); ?>">
+        </div>
+    </div>
+</div>

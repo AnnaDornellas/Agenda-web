@@ -1,0 +1,53 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12 offset-0 col-md-8 offset-md-2 col-lg-6 offset-lg-3 my-5">
+            <div class="card shadow">
+                <div class="card-header">
+                    <?php if ($error) : ?>
+                        <div class="alert alert-danger"><?= $error; ?></div>
+                    <?php endif; ?>
+                    <h1 class="d-flex justify-content-center">Editar Usuário</h2>
+                </div>
+                <div class="card-body">
+                    <form method="POST" action="<?= $_refer("users/edit/" . $id); ?>">
+                        <div class="form-floating mb-3">
+                            <input type="hidden" class="form-control" name="id" value="<?= $id; ?>">
+                            <input type="text" class="form-control" name="name" id="floatingName" placeholder="Nome completo" required="true" value="<?= $name; ?>">
+                            <label for="floatingName">Nome completo:</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" name="email" id="floatingEmail" placeholder="E-mail" required="true" disabled="" value="<?= $email; ?>">
+                            <label for="floatingEmail">E-mail:</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="tel" class="form-control tel" name="tel" id="floatingTel" placeholder="Telefone" required="true" value="<?= $tel; ?>">
+                            <label for="floatingTel">Telefone:</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" name="registration" id="floatingEmail" placeholder="Matrícula" required="true" disabled="" value="<?= $registration; ?>">
+                            <label for="floatingEmail">Matrícula:</label>
+                        </div>
+                        <div class="ajax_users_department_distinct_all" data-refer="<?= $_refer("users/ajax_users_department_distinct_all") ?>" data-value="<?= $department; ?>"></div>
+                        <?php include $_element("parts/allows"); ?>
+                        <div class="form-floating mb-3">
+                            <div class="form-check">
+                                <?php
+                                ($check == true) ? $check = "checked" : $check = "";
+                                ?>
+                                <input class="form-check-input" type="checkbox" name="cbox" id="flexCheckChecked" <?= $check; ?>>
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    Reset senha para <strong>sutin</strong>?
+                                </label>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="d-flex justify-content-center form-floating mb-3">
+                            <input type="button" onclick="javascript:window.location.href = '<?= $_refer('users'); ?>'" class="btn effect-negative" value="Voltar">&nbsp;
+                            <input type="submit" class="btn effect-positive" value="Atualizar">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

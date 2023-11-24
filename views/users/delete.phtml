@@ -1,0 +1,43 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12 offset-0 col-md-8 offset-md-2 col-lg-6 offset-lg-3 my-5">
+            <div class="card shadow">
+                <div class="card-header">
+                    <?php if ($error) : ?>
+                        <div class="alert alert-danger"><?= $error; ?></div>
+                    <?php endif; ?>
+                    <h1>Excluir Usuário</h3>
+                </div>
+                <div class="card-body">
+                    <form method="POST" action="<?= $_refer("users/delete/" . $id); ?>">
+                        <div class="form-floating mb-3">
+                            <input type="hidden" class="form-control" name="id" value="<?= $id; ?>">
+                            <input type="text" class="form-control" id="floatingName" placeholder="Nome completo" disabled="" value="<?= $name; ?>">
+                            <label for="floatingName">Nome completo:</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" name="email" id="floatingEmail" placeholder="E-mail" required="true" disabled="" value="<?= $email; ?>">
+                            <label for="floatingEmail">E-mail:</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <div class="form-check">
+                                <?php
+                                ($check == true) ? $check = "checked" : $check = "";
+                                ?>
+                                <input class="form-check-input" type="checkbox" name="cbox" id="flexCheckChecked" <?= $check; ?>>
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    Para excluir o usuário marque esta opção. <strong>Atenção:</strong> Esta ação não poderá ser desfeita!
+                                </label>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="d-flex justify-content-center form-floating mb-3">
+                            <input type="button" onclick="javascript:window.location.href = '<?= $_refer('users'); ?>'" class="btn effect-negative" value="Voltar">&nbsp;
+                            <input type="submit" class="btn effect-positive" value="Excluir">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

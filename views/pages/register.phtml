@@ -1,0 +1,9 @@
+<h1>Cadastre-se</h1>
+<form action="<?= $_refer("register"); ?>" method="post">
+    <label>Informe um nome de usuário</label><br>
+    <input type="text" name="username" required="true"/><br>
+    <label>Informe uma senha</label><br>
+    <input type="password" name="password" required="true"/><br>
+    <input type="submit" value="Entrar"/><br>
+    <a href="<?= $_refer("login"); ?>">Login</a>
+</form>

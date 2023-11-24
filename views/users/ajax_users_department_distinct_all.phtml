@@ -1,0 +1,13 @@
+<div class="form-floating mb-3">
+    <select class="form-control" name="department" id="department" required="true">
+        <optgroup label="Escolha uma das opções">
+            <?php foreach ($ajax_users_department_distinct_all as $department) : ?>
+                <option value="<?= $department["department"]; ?>"><?= $department["department"]; ?></option>
+            <?php endforeach; ?>
+        </optgroup>
+        <optgroup label="O que você procura não está na lista?">
+            <option value="NOT_FOUND">CADASTRAR OUTRO</option>
+        </optgroup>
+    </select>
+    <label for="department">Órgão/Departamento:</label>
+</div>

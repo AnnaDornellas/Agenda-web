@@ -1,0 +1,26 @@
+<div class="container error-page d-flex flex-wrap m-auto">
+    <div class="row">
+        <div class="col text-center">
+            <img src="<?= $_img("404.svg"); ?>">
+        </div>
+        <div class="col pt-5 m-auto">
+            <div class="col">
+                <h3>Desculpe, a página que você está procurando não foi encontrada por aqui. :/</h3>
+            </div>
+            <div class="col text-center">
+                <br>
+                <h4>O que pode ter acontecido?</h4>
+                <p>O conteúdo que você procurava pode ter sido removido ou estar temporariamente indisponível. Verifique se
+                    você
+                    digitou corretamente o endereço desejado ou, se preferir, acesse o que precisa em:
+                    <br>
+                    <a class="nav-link fw-bold d-inline <?= $act_home; ?>" href="<?= $_refer(); ?>"> <i class="bi bi-house-fill"></i> Início </a>
+                    <a class="nav-link fw-bold d-inline mx-3 <?= $act_menu; ?>" href="<?= $_refer("dashboard"); ?>"> <i class="bi bi-menu-button-wide-fill"></i> Menu </a>
+                    <a class="nav-link fw-bold d-inline" href="javascript:history.back()">
+                        <i class="bi bi-arrow-left-circle-fill"></i> Voltar
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

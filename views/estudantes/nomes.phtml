@@ -1,0 +1,17 @@
+<h1>Nomes</h1>
+
+<ul>
+    <li>Nome: <?= $nome; ?></li>
+    <li>Idade: <?= $idade; ?></li>
+    <li>Profissão: <?= $profissao; ?></li>
+    <li>Informações: <?= $info; ?></li>
+
+    <?php foreach ($disciplinas as $disciplina): ?>
+        <li>Informações: <?= $disciplina; ?></li>
+    <?php endforeach; ?>
+        
+    <?php foreach ($disciplinas2 as $nome => $value): ?>
+        <li>Informações: <?= $value; ?></li>
+    <?php endforeach; ?>
+
+</ul>

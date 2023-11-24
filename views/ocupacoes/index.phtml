@@ -1,0 +1,30 @@
+<h1>Minha lista de ocupações</h1>
+
+<div>
+    <a href="<?= $_refer("ocupacoes/add"); ?>">Novo registro</a> | <a href="<?= $_refer("logout"); ?>">Sair</a>
+</div>
+<table>
+    <tr>
+        <th>#</th>
+        <th>Data de Criação</th>
+        <th>Data de Atualização</th>
+        <th>Nome</th>
+        <th>Ocupação</th>
+        <th>Email</th>
+        <th>Opções</th>
+    </tr>
+    <?php foreach ($occupations as $occupation): ?>
+        <tr>
+            <td><?= $occupation["id"]; ?></td>
+            <td><?= $occupation["created"]; ?></td>
+            <td><?= $occupation["updated"]; ?></td>
+            <td><?= $occupation["name"]; ?></td>
+            <td><?= $occupation["occupation"]; ?></td>
+            <td><?= $occupation["email"]; ?></td>
+            <td>
+                <a href="<?= $_refer("ocupacoes/edit/" . $occupation["id"]); ?>">Atualizar</a>
+                <a href="<?= $_refer("ocupacoes/delete/" . $occupation["id"]); ?>">Excluir</a>
+            </td>
+        </tr>
+    <?php endforeach; ?>
+</table>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/xampp/htdocs/anna/www/default/js/anna.js</file>
+            <file>file:/C:/xampp/htdocs/anna/controllers/PagesController.php</file>
+            <file>file:/C:/xampp/htdocs/anna/models/UsersModel.php</file>
+            <file>file:/C:/xampp/htdocs/anna/views/pages/login.phtml</file>
+            <file>file:/C:/xampp/htdocs/anna/views/pages/register.phtml</file>
+            <file>file:/C:/xampp/htdocs/anna/views/ocupacoes/edit.phtml</file>
+            <file>file:/C:/xampp/htdocs/anna/controllers/AgendaController.php</file>
+            <file>file:/C:/xampp/htdocs/anna/views/pages/welcome.phtml</file>
+            <file>file:/C:/xampp/htdocs/anna/themes/default/elements/flash/success.phtml</file>
+            <file>file:/C:/xampp/htdocs/anna/themes/default/themes.phtml</file>
+            <file>file:/C:/xampp/htdocs/anna/classes/DataBuilding.php</file>
+            <file>file:/C:/xampp/htdocs/anna/themes/default/elements/flash/error.phtml</file>
+            <file>file:/C:/xampp/htdocs/anna/views/pages/contatos.phtml</file>
+            <file>file:/C:/xampp/htdocs/anna/views/ocupacoes/add.phtml</file>
+            <file>file:/C:/xampp/htdocs/anna/dumps/20221206.sql</file>
+            <file>file:/C:/xampp/htdocs/anna/classes/View.php</file>
+            <file>file:/C:/xampp/htdocs/anna/themes/default/elements/scripts.phtml</file>
+            <file>file:/C:/xampp/htdocs/anna/classes/Auth.php</file>
+            <file>file:/C:/xampp/htdocs/anna/classes/Controller.php</file>
+            <file>file:/C:/xampp/htdocs/anna/views/ocupacoes/index.phtml</file>
+            <file>file:/C:/xampp/htdocs/anna/controllers/UsersController.php</file>
+            <file>file:/C:/xampp/htdocs/anna/views/pages/logout.phtml</file>
+            <file>file:/C:/xampp/htdocs/anna/models/PagesModel.php</file>
+            <file>file:/C:/xampp/htdocs/anna/themes/default/elements/flash/messages_flash.phtml</file>
+            <file>file:/C:/xampp/htdocs/anna/controllers/SolicitacoesController.php</file>
+            <file>file:/C:/xampp/htdocs/anna/dumps/20231026.sql</file>
+            <file>file:/C:/xampp/htdocs/anna/controllers/OcupacoesController.php</file>
+            <file>file:/C:/xampp/htdocs/anna/models/OcupacoesModel.php</file>
+            <file>file:/C:/xampp/htdocs/anna/index.php</file>
+        </group>
+    </open-files>
+</project-private>

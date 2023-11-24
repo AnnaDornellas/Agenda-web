@@ -1,0 +1,21 @@
+<h1>Meus Contatos</h1>
+<main>
+    <div id="formulario">
+        <form>
+            <input type="hidden" name="id"/>
+            <input name="nome" type="text" maxlength="50" placeholder="Nome" required/>
+            <input name="telefone" type="text" maxlength="15" placeholder="Telefone" required/>
+            <input name="email" type="text" maxlength="50" placeholder="E-mail" required/>
+            <input type="submit" value="salvar"/>
+
+        </form></div>
+
+    <div class="list">
+        <input id="pesquisa" type="text" placeholder="Pesquisar" onkeyup="listar(this.value)" />
+        <ul>
+
+        </ul>
+
+    </div>
+</main>
+<p><a href="<?= $_refer(""); ?>">Home</a></p>

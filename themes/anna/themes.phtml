@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="<?= $_lang; ?>">
+    <head>
+        <?php include $_element("head"); ?>
+    </head>
+    <body>
+        <?php include $_element("navbar"); ?>
+        <?php include $this->viewPath; ?>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <footer>
+                        <?php include $_element("scripts"); ?>
+                    </footer>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

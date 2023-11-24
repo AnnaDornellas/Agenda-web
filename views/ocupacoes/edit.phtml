@@ -1,0 +1,12 @@
+<h1>Editar pessoa a uma ocupação</h1>
+<div>
+    <form action="<?= $_refer("ocupacoes/edit/". $id); ?>" method="post">
+        <label>Escreva seu nome</label><br>
+        <input type='text' name='name' required="true" placeholder="Escreva seu nome" value="<?= $pessoa["name"]; ?>"><br>
+        <label>Escreva a sua ocupação</label><br>
+        <input type='text' name='occupation' required="true" placeholder="Escreva a sua ocupação" value="<?= $pessoa["occupation"]; ?>"><br>
+        <label>Escreva o seu email</label><br>
+        <input type='text' name='email' required="true" placeholder="Escreva o seu email" value="<?= $pessoa["email"]; ?>"><br>
+        <input type="submit" value="salvar">
+    </form>
+</div>

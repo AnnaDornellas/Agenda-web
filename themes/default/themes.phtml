@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="<?= $_lang; ?>">
+    <head>
+        <?php include $_element("head"); ?>
+    </head>
+    <body>
+       
+        <section>
+            <div class="container ">
+                <div class="row">
+                    <div class="col-6 offset-3">
+                        <?php #include $_element("navegacao/nav_anna"); ?>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 offset-3">
+                        <?php include $_element("flash/messages_flash"); ?>
+                        <?php include $this->viewPath; ?>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    <footer>
+                        <?php include $_element("scripts"); ?>
+                    </footer>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

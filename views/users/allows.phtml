@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12 offset-0 col-md-8 offset-md-2 col-lg-6 offset-lg-3 my-5">
+            <div class="card shadow">
+                <div class="card-header">
+                    <?php if ($error) : ?>
+                        <div class="alert alert-danger"><?= $error; ?></div>
+                    <?php endif; ?>
+                    <h1 class="d-flex justify-content-center">Permissões de Usuário</h2>
+                </div>
+                <div class="card-body">
+                    <form class="form-box" method="POST" action="<?= $_refer("users/allows/" . $id); ?>">
+                        <div class="form-floating mb-3">
+                            <input type="hidden" name="action" value="1">
+                            <input type="text" class="form-control" id="floatingName" placeholder="Nome completo" required="true" value="<?= $name; ?>" disabled="true">
+                            <label for="floatingName">Nome completo:</label>
+                        </div>
+                        <hr>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingUsername" placeholder="Login" required="true" value="<?= $username; ?>" disabled="true">
+                            <label for="floatingUsername">Login:</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingEmail" placeholder="E-mail" required="true" value="<?= $email; ?>" disabled="true">
+                            <label for="floatingEmail">E-mail:</label>
+                        </div>
+                        <?php include $_element("parts/allows"); ?>
+                        <br>
+                        <div class="d-flex justify-content-center form-floating mb-3">
+                            <input type="button" onclick="javascript:window.location.href = '<?= $_refer('users'); ?>'" class="btn effect-negative" value="Voltar">&nbsp;
+                            <input type="submit" class="btn effect-positive" value="Atualizar">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

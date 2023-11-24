@@ -1,0 +1,35 @@
+body{
+    background-color: rgb(238, 238, 247) ;
+}
+header{
+    background-color: rgb(136, 88, 190);
+    margin: auto;
+    border: 1px solid gray;
+    border-radius: 30px;
+   
+    box-shadow: 2px 2px grey;
+    text-align: center;
+    width: 300px;
+    
+}
+div{
+
+    background-color: rgb(136, 88, 190);
+    margin: auto;
+    justify-content: center;
+    width: 300px;
+    height: 200px;
+    border-radius: 30px;
+}
+input{
+    display:flex;
+    width: 50%;
+    margin:0 auto;
+    justify-content: center;
+    
+    
+}
+h2{
+    padding: 10px;
+    text-align: center;
+}
